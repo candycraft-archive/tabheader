@@ -51,8 +51,8 @@ public class TabHeader extends Plugin implements Listener {
 
         String server = player.getServer() == null ? "Lädt..." : player.getServer().getInfo().getName();
 
-        BaseComponent[] header = TextComponent.fromLegacyText("\n§d§lCandyCraft\n");
-        BaseComponent[] footer = TextComponent.fromLegacyText("\n§c" + server + "§8 * §fshop.candycraft.de\n§d" + onlineCount + "§f Spieler online");
+        BaseComponent[] header = TextComponent.fromLegacyText("\n§d§lCandyCraft\n§7§o" + onlineCount + " Spieler online\n");
+        BaseComponent[] footer = TextComponent.fromLegacyText("\n§c" + server + "§8 * §fshop.candycraft.de\n");
 
         player.setTabHeader(header, footer);
     }
